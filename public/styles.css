@@ -1,0 +1,72 @@
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box; /* 让内边距和边框包含在元素宽度内 */
+}
+
+/* 按钮容器样式 */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 90%; /* 调整为占父容器宽度的90%，增强适配性 */
+    max-width: 300px;
+    margin: 0 auto; /* 水平居中 */
+}
+
+/* 按钮样式 */
+.button {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* 输入框样式 */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* 让内边距和边框包含在元素宽度内 */
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 响应式设计，针对小屏幕设备 */
+@media (max-width: 480px) {
+    /* 可根据需要调整按钮容器的样式 */
+    .button-container {
+        width: 95%;
+    }
+}

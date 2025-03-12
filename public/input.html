@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>输入生词</title>
+    <!-- 这里可以引入和index.html相同的样式文件 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 添加返回按钮 -->
+    <a href="index.html">
+        <button>返回</button>
+    </a>
+
+    <h1>输入生词</h1>
+    <form id="wordInputForm">
+        <label for="singleWord">单个单词输入:</label>
+        <input type="text" id="singleWord" name="singleWord" placeholder="输入单个单词">
+        <br>
+        <label for="batchWords">批量单词输入（每行一个单词）:</label>
+        <textarea id="batchWords" name="batchWords" rows="10" cols="30" placeholder="每行输入一个单词"></textarea>
+        <br>
+        <input type="submit" value="提交">
+    </form>
+    <!-- 这里可以添加和index.html类似的脚本文件 -->
+    <script src="script.js"></script>
+</body>
+</html>
